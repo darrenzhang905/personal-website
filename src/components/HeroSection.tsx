@@ -55,7 +55,7 @@ export default function HeroSection() {
             </h2>
             
             <p className="text-lg text-gray-600 text-white mb-8 max-w-lg mx-auto md:mx-0">
-              sup sup
+                Crafting purposeful digital tools that solve everyday challenges
             </p>
             
             <div className="flex flex-row gap-4 justify-center md:justify-start">

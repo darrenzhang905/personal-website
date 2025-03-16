@@ -56,7 +56,7 @@ export default function AboutSection() {
           }`}>
             <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
               <p className="text-gray-300 mb-6">
-                hey! i'm darren
+                Hey! I'm Darren, an engineer who loves building solutions to everyday problems. 
               </p>
 
               <div className="mb-8">
