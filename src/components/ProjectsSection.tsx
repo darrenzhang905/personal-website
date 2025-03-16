@@ -8,34 +8,32 @@ const projects = [
   {
     id: 1,
     title: 'Portfolio Website',
-    description: 'My responsive portfolio website to showcase professional work and projects',
-    tags: ['React', 'Tailwind CSS'],
+    description: 'My responsive portfolio website to showcase projects',
+    tags: ['TypeScript', 'React', 'Next','Tailwind CSS'],
     githubUrl: 'https://github.com/darrenzhang905/personal-website',
+    liveUrl: '',
   },
   {
     id: 2,
     title: 'Dino Run',
     description: 'Personal adapation of Google Chromes Dinosaur Game',
-    tags: ['Python'],
+    tags: ['Python', 'Pygame', 'Pyaudio', 'Aubio'],
     githubUrl: 'https://github.com/darrenzhang905/Dino-Run',
+    liveUrl: '',
   },
   {
     id: 3,
     title: 'GPA Defense',
     description: 'Simple tower defense game that me and my friends programmed during a 24 hour hackathon',
-    tags: ['Python'],
+    tags: ['Python', 'Pygame'],
     githubUrl: 'https://github.com/darrenzhang905/GPA-Defense',
+    liveUrl: '',
   },
 ];
 
 export default function ProjectsSection() {
-  const [activeFilter, setActiveFilter] = useState('All');
-  const [filteredProjects, setFilteredProjects] = useState(projects);
   const sectionRef = useRef<HTMLElement>(null);
   const [isVisible, setIsVisible] = useState(false);
-
-  // Get all unique tags from projects
-  const allTags = ['All', ...Array.from(new Set(projects.flatMap(project => project.tags)))];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -63,16 +61,6 @@ export default function ProjectsSection() {
     };
   }, []);
 
-  useEffect(() => {
-    if (activeFilter === 'All') {
-      setFilteredProjects(projects);
-    } else {
-      setFilteredProjects(
-        projects.filter(project => project.tags.includes(activeFilter))
-      );
-    }
-  }, [activeFilter]);
-
   return (
     <section 
       id="projects" 
@@ -93,28 +81,9 @@ export default function ProjectsSection() {
           <div className="h-1 w-20 bg-blue-500 mx-auto mt-4"></div>
         </div>
 
-        {/* Filter buttons */}
-        <div className={`flex flex-wrap justify-center gap-2 mb-12 transition-all duration-700 delay-200 ${
-          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-        }`}>
-          {allTags.map((tag, index) => (
-            <button
-              key={index}
-              onClick={() => setActiveFilter(tag)}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                activeFilter === tag 
-                  ? 'bg-blue-500 text-white'
-                  : 'bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600'
-              }`}
-            >
-              {tag}
-            </button>
-          ))}
-        </div>
-
         {/* Projects grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-          {filteredProjects.map((project, index) => (
+          {projects.map((project, index) => (
             <div 
               key={project.id}
               className={`bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-all duration-700 delay-${index * 100 + 300} ${
@@ -143,17 +112,19 @@ export default function ProjectsSection() {
                 </div>
                 
                 <div className="flex gap-4">
-                  <a 
-                    href={project.liveUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium flex items-center"
-                  >
-                    <svg className="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                    </svg>
-                    Live Demo
-                  </a>
+                  {project.liveUrl && (
+                    <a 
+                      href={project.liveUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium flex items-center"
+                    >
+                      <svg className="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                      </svg>
+                      Check it out!
+                    </a>
+                  )}
                   
                   <a 
                     href={project.githubUrl} 
