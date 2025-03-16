@@ -27,7 +27,7 @@ export default function HeroSection() {
                 <div className="h-full w-full rounded-full bg-white dark:bg-gray-900 p-3">
                   <div className="h-full w-full rounded-full overflow-hidden bg-gray-200 dark:bg-gray-800 flex items-center justify-center">
                     <Image 
-                      src="/images/profile.jpg" 
+                      src="/images/profile.png" 
                       alt="Darren Zhang picture" 
                       layout="fill" 
                       objectFit="cover"
