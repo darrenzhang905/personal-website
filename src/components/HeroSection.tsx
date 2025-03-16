@@ -64,29 +64,22 @@ export default function HeroSection() {
             </div>
           </div>
           
-          {/* Image or illustration */}
           <div 
             className={`lg:w-1/2 transition-all duration-1000 delay-300 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
           >
             <div className="relative h-80 w-80 md:h-96 md:w-96 mx-auto">
-              {/* Replace this with your own image */}
               <div className="h-full w-full rounded-full bg-gradient-to-br from-blue-400 to-purple-500 p-1">
                 <div className="h-full w-full rounded-full bg-white dark:bg-gray-900 p-3">
                   <div className="h-full w-full rounded-full overflow-hidden bg-gray-200 dark:bg-gray-800 flex items-center justify-center">
-                    {/* Replace with your professional photo */}
-                    <p className="text-gray-500 dark:text-gray-400 text-sm">Your Photo Here</p>
-                    {/* 
-                    Uncomment and use your own image:
                     <Image 
                       src="/images/profile.jpg" 
-                      alt="Darren Zhang" 
+                      alt="Darren Zhang picture" 
                       layout="fill" 
                       objectFit="cover"
                       className="rounded-full"
                     /> 
-                    */}
                   </div>
                 </div>
               </div>

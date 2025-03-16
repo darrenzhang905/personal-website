@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function Resume() {
   return (
-    <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
+    <div className="min-h-screen font-sans">
       <Navbar />
       
       <main className="pt-20 pb-16 px-4 sm:px-6 lg:px-8">

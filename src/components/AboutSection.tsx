@@ -50,27 +50,6 @@ export default function AboutSection() {
         </div>
 
         <div className="flex flex-col md:flex-row gap-12 items-center">
-          {/* Image Column */}
-          <div className={`md:w-1/2 transition-all duration-700 delay-100 ${
-            isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
-          }`}>
-            <div className="w-full h-96 max-w-md mx-auto bg-gray-200 dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden">
-              {/* Replace with your about section image */}
-              <div className="w-full h-full flex items-center justify-center">
-                <p className="text-gray-500 dark:text-gray-400 text-sm">Your Image Here</p>
-              </div>
-              {/* 
-              Uncomment and use your own image:
-              <Image 
-                src="/images/about-me.jpg" 
-                alt="About Me" 
-                layout="fill" 
-                objectFit="cover" 
-              /> 
-              */}
-            </div>
-          </div>
-
           {/* Content Column */}
           <div className={`md:w-1/2 transition-all duration-700 delay-200 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
@@ -113,15 +92,6 @@ export default function AboutSection() {
                   <span>When I'm not coding, I enjoy traveling and reselling</span>
                 </li>
               </ul>
-            </div>
-
-            <div className="flex flex-wrap gap-3">
-              <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded text-sm">React</span>
-              <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded text-sm">Next.js</span>
-              <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded text-sm">TypeScript</span>
-              <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded text-sm">Tailwind CSS</span>
-              <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded text-sm">JavaScript</span>
-              <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded text-sm">HTML/CSS</span>
             </div>
           </div>
         </div>

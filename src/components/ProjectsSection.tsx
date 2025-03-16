@@ -4,16 +4,27 @@
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 
-// Sample project data - replace with your own projects
 const projects = [
   {
     id: 1,
     title: 'Portfolio Website',
-    description: 'A responsive portfolio website to showcase professional work and projects.',
-    image: '/images/projects/project2.jpg', // Replace with your project image
+    description: 'My responsive portfolio website to showcase professional work and projects',
     tags: ['React', 'Tailwind CSS'],
-    liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/darrenzhang905/project2',
+    githubUrl: 'https://github.com/darrenzhang905/personal-website',
+  },
+  {
+    id: 2,
+    title: 'Dino Run',
+    description: 'Personal adapation of Google Chromes Dinosaur Game',
+    tags: ['Python'],
+    githubUrl: 'https://github.com/darrenzhang905/Dino-Run',
+  },
+  {
+    id: 3,
+    title: 'GPA Defense',
+    description: 'Simple tower defense game that me and my friends programmed during a 24 hour hackathon',
+    tags: ['Python'],
+    githubUrl: 'https://github.com/darrenzhang905/GPA-Defense',
   },
 ];
 
@@ -110,22 +121,7 @@ export default function ProjectsSection() {
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
             >
-              <div className="h-60 bg-gray-200 dark:bg-gray-700 relative">
-                {/* Replace with your actual project images */}
-                <div className="w-full h-full flex items-center justify-center">
-                  <p className="text-gray-500 dark:text-gray-400 text-sm">Project Image</p>
-                </div>
-                {/* 
-                Uncomment and use your own project images:
-                <Image 
-                  src={project.image}
-                  alt={project.title}
-                  layout="fill"
-                  objectFit="cover"
-                /> 
-                */}
-              </div>
-              
+          
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
                   {project.title}
