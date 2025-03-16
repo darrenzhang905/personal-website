@@ -101,7 +101,7 @@ export default function ContactSection() {
                     </svg>
                   </a>
                   <a 
-                    href="https://linkedin.com/in/yourusername" 
+                    href="https://linkedin.com/in/darrenzhang905" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="p-2 bg-gray-100 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-600 transition-all"
