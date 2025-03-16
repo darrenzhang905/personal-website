@@ -11,6 +11,9 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Darren Zhang",
   description: "Software Engineer",
+  icons: {
+    icon: '/dragon.ico',
+  },
 };
 
 export default function Home() {

@@ -54,41 +54,26 @@ export default function AboutSection() {
           <div className={`md:w-1/2 transition-all duration-700 delay-200 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
           }`}>
-            <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
-              Software Engineer
-            </h3>
             
             <p className="text-gray-600 dark:text-gray-300 mb-6">
-              Hello! I'm Darren, a passionate software engineer.
+              hey! i'm darren
             </p>
 
             <div className="mb-8">
               <h4 className="text-lg font-semibold text-gray-800 dark:text-white mb-4">
                 Some facts about me:
               </h4>
-              <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-                <li className="flex items-start">
-                  <svg className="h-5 w-5 text-blue-500 mr-2 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span>Based in New York City, but open to remote work</span>
+              <ul className="space-y-2 text-gray-600 dark:text-gray-300 list-disc pl-5">
+                <li>
+                  <span>Based in New York City</span>
                 </li>
-                <li className="flex items-start">
-                  <svg className="h-5 w-5 text-blue-500 mr-2 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
+                <li>
                   <span>Graduated with a degree in math from Carnegie Mellon University</span>
                 </li>
-                <li className="flex items-start">
-                  <svg className="h-5 w-5 text-blue-500 mr-2 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
+                <li>
                   <span>Worked at Amazon and Capital One</span>
                 </li>
-                <li className="flex items-start">
-                  <svg className="h-5 w-5 text-blue-500 mr-2 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
+                <li>
                   <span>When I'm not coding, I enjoy traveling and reselling</span>
                 </li>
               </ul>
