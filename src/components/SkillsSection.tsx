@@ -3,47 +3,9 @@
 
 import { useRef, useState, useEffect } from 'react';
 
-// Sample skills data - replace with your own skills
-const skillCategories = [
-  {
-    name: 'Frontend',
-    skills: [
-      { name: 'HTML5', proficiency: 90 },
-      { name: 'CSS3/SCSS', proficiency: 85 },
-      { name: 'JavaScript', proficiency: 90 },
-      { name: 'TypeScript', proficiency: 85 },
-      { name: 'React', proficiency: 90 },
-      { name: 'Next.js', proficiency: 85 },
-      { name: 'Tailwind CSS', proficiency: 90 },
-    ],
-  },
-  {
-    name: 'Backend',
-    skills: [
-      { name: 'Node.js', proficiency: 80 },
-      { name: 'Express', proficiency: 75 },
-      { name: 'MongoDB', proficiency: 70 },
-      { name: 'Firebase', proficiency: 75 },
-      { name: 'REST API', proficiency: 85 },
-    ],
-  },
-  {
-    name: 'Tools & Others',
-    skills: [
-      { name: 'Git/GitHub', proficiency: 85 },
-      { name: 'Webpack', proficiency: 70 },
-      { name: 'Figma', proficiency: 75 },
-      { name: 'VS Code', proficiency: 90 },
-      { name: 'Responsive Design', proficiency: 95 },
-      { name: 'SEO Fundamentals', proficiency: 80 },
-    ],
-  },
-];
-
 export default function SkillsSection() {
   const sectionRef = useRef<HTMLElement>(null);
   const [isVisible, setIsVisible] = useState(false);
-  const [activeCategory, setActiveCategory] = useState(skillCategories[0].name);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -71,8 +33,6 @@ export default function SkillsSection() {
     };
   }, []);
 
-  const activeSkills = skillCategories.find(category => category.name === activeCategory)?.skills || [];
-
   return (
     <section 
       id="skills" 
@@ -92,7 +52,6 @@ export default function SkillsSection() {
           </p>
         </div>
 
-        {/* Additional skills */}
         <div className={`mt-16 text-center transition-all duration-700 delay-700 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
