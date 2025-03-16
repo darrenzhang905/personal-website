@@ -66,10 +66,11 @@ export default function Footer() {
               <li>
                 <a 
                   href="/Darren Zhang Resume.pdf"
-                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white"
                 >
-                  Download Resume
+                  Resume
                 </a>
               </li>
             </ul>

@@ -31,7 +31,7 @@ export default function Navbar() {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="text-xl font-bold text-gray-900 dark:text-white">
-              Home
+              Darren Zhang
             </Link>
           </div>
           
@@ -51,10 +51,11 @@ export default function Navbar() {
             </Link>
             <a 
               href="/Darren Zhang Resume.pdf" 
-              download
+              target="_blank" 
+              rel="noopener noreferrer"
               className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-4 py-2 rounded-md text-sm font-medium"
             >
-              Download Resume
+              Resume
             </a>
           </div>
           
@@ -120,11 +121,12 @@ export default function Navbar() {
           </Link>
           <a 
             href="/Darren Zhang Resume.pdf" 
-            download
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setIsMenuOpen(false)}
             className="block px-3 py-2 rounded-md text-base font-medium bg-gray-900 dark:bg-white text-white dark:text-gray-900 mt-4"
           >
-            Download Resume
+            Resume
           </a>
         </div>
       </div>
