@@ -68,13 +68,13 @@ export default function HeroSection() {
             <div className="flex flex-row gap-4 justify-center md:justify-start">
               <Link
                 href="/#projects"
-                className="bg-blue-600 text-white py-3 px-6 rounded-md font-medium shadow-lg hover:bg-blue-700 transition-all"
+                className="bg-white text-black py-3 px-6 rounded-md font-medium shadow-lg hover:bg-gray-200 transition-all"
               >
                 View My Work
               </Link>
               <Link
                 href="/#contact"
-                className="border-2 border-white text-white py-3 px-6 rounded-md font-medium hover:bg-gray-800 transition-all"
+                className="bg-white text-black py-3 px-6 rounded-md font-medium shadow-lg hover:bg-gray-200 transition-all"
               >
                 Let's Connect
               </Link>

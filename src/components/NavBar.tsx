@@ -76,7 +76,7 @@ export default function Navbar() {
               href="/Darren Zhang Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors"
+              className="bg-white text-black px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-200 transition-colors"
             >
               Resume
             </a>
@@ -165,7 +165,7 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setIsMenuOpen(false)}
-            className="block px-3 py-2 rounded-md text-base font-medium bg-blue-600 text-white mt-4 hover:bg-blue-700"
+            className="block px-3 py-2 rounded-md text-base font-medium bg-white text-black mt-4 hover:bg-gray-200"
           >
             Resume
           </a>
