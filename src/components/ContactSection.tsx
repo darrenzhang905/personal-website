@@ -19,7 +19,7 @@ export default function ContactSection() {
         root: null,
         rootMargin: "0px",
         threshold: 0.1,
-      },
+      }
     );
 
     if (sectionRef.current) {
@@ -37,7 +37,7 @@ export default function ContactSection() {
     <section
       id="contact"
       ref={sectionRef}
-      className="py-20 px-4 sm:px-6 lg:px-8"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-black"
     >
       <div className="max-w-7xl mx-auto">
         <div
@@ -45,10 +45,10 @@ export default function ContactSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             Get In Touch
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Have a project in mind or want to chat? Feel free to reach out!
           </p>
           <div className="h-1 w-20 bg-blue-500 mx-auto mt-4"></div>
@@ -60,16 +60,16 @@ export default function ContactSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">
+          <div className="bg-gray-800 p-8 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold text-white mb-6">
               Contact Information
             </h3>
 
             <div className="space-y-6">
               <div className="flex items-start">
-                <div className="flex-shrink-0 p-2 bg-blue-100 dark:bg-blue-900 rounded-full">
+                <div className="flex-shrink-0 p-2 bg-blue-900 rounded-full">
                   <svg
-                    className="w-6 h-6 text-blue-600 dark:text-blue-300"
+                    className="w-6 h-6 text-blue-300"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -84,12 +84,10 @@ export default function ContactSection() {
                   </svg>
                 </div>
                 <div className="ml-4">
-                  <h4 className="text-lg font-medium text-gray-800 dark:text-white">
-                    Email
-                  </h4>
+                  <h4 className="text-lg font-medium text-white">Email</h4>
                   <a
                     href="mailto:darrenzhang905@gmail.com"
-                    className="text-blue-500 hover:underline"
+                    className="text-blue-400 hover:underline"
                   >
                     darrenzhang905@gmail.com
                   </a>
@@ -97,9 +95,9 @@ export default function ContactSection() {
               </div>
 
               <div className="flex items-start">
-                <div className="flex-shrink-0 p-2 bg-blue-100 dark:bg-blue-900 rounded-full">
+                <div className="flex-shrink-0 p-2 bg-blue-900 rounded-full">
                   <svg
-                    className="w-6 h-6 text-blue-600 dark:text-blue-300"
+                    className="w-6 h-6 text-blue-300"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -120,17 +118,13 @@ export default function ContactSection() {
                   </svg>
                 </div>
                 <div className="ml-4">
-                  <h4 className="text-lg font-medium text-gray-800 dark:text-white">
-                    Location
-                  </h4>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    New York, NY
-                  </p>
+                  <h4 className="text-lg font-medium text-white">Location</h4>
+                  <p className="text-gray-300">New York, NY</p>
                 </div>
               </div>
 
               <div className="pt-6">
-                <h4 className="text-lg font-medium text-gray-800 dark:text-white mb-4">
+                <h4 className="text-lg font-medium text-white mb-4">
                   Connect with me
                 </h4>
                 <div className="flex space-x-4">
@@ -138,7 +132,7 @@ export default function ContactSection() {
                     href="https://github.com/darrenzhang905"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 bg-gray-100 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-600 transition-all"
+                    className="p-2 bg-gray-700 rounded-full text-white hover:bg-gray-600 transition-all"
                   >
                     <svg
                       className="w-6 h-6"
@@ -157,7 +151,7 @@ export default function ContactSection() {
                     href="https://linkedin.com/in/darrenzhang905"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 bg-gray-100 dark:bg-gray-700 rounded-full text-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-600 transition-all"
+                    className="p-2 bg-gray-700 rounded-full text-white hover:bg-gray-600 transition-all"
                   >
                     <svg
                       className="w-6 h-6"
@@ -171,8 +165,8 @@ export default function ContactSection() {
                 </div>
               </div>
 
-              <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
-                <p className="text-gray-600 dark:text-gray-300">
+              <div className="mt-8 pt-8 border-t border-gray-700">
+                <p className="text-gray-300">
                   Open to opportunities and interesting projects. Let's make
                   some cool stuff!
                 </p>

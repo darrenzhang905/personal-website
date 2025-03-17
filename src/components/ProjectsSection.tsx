@@ -48,7 +48,7 @@ export default function ProjectsSection() {
         root: null,
         rootMargin: "0px",
         threshold: 0.1,
-      },
+      }
     );
 
     if (sectionRef.current) {
@@ -66,7 +66,7 @@ export default function ProjectsSection() {
     <section
       id="projects"
       ref={sectionRef}
-      className="py-20 px-4 sm:px-6 lg:px-8"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-black"
     >
       <div className="max-w-7xl mx-auto">
         <div
@@ -74,10 +74,10 @@ export default function ProjectsSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             My Projects
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Here are some of my recent projects. Each project reflects my skills
             and experience in different technologies and problem domains.
           </p>
@@ -89,26 +89,26 @@ export default function ProjectsSection() {
           {projects.map((project, index) => (
             <div
               key={project.id}
-              className={`bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-all duration-700 delay-${index * 100 + 300} ${
+              className={`bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-all duration-700 delay-${
+                index * 100 + 300
+              } ${
                 isVisible
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-10"
               }`}
             >
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                <h3 className="text-xl font-bold text-white mb-2">
                   {project.title}
                 </h3>
 
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  {project.description}
-                </p>
+                <p className="text-gray-300 mb-4">{project.description}</p>
 
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tags.map((tag, tagIndex) => (
                     <span
                       key={tagIndex}
-                      className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 rounded text-xs"
+                      className="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs"
                     >
                       {tag}
                     </span>
@@ -121,7 +121,7 @@ export default function ProjectsSection() {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium flex items-center"
+                      className="text-blue-400 hover:text-blue-300 font-medium flex items-center"
                     >
                       <svg
                         className="w-5 h-5 mr-1"
@@ -145,7 +145,7 @@ export default function ProjectsSection() {
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200 font-medium flex items-center"
+                    className="text-gray-400 hover:text-gray-200 font-medium flex items-center"
                   >
                     <svg
                       className="w-5 h-5 mr-1"
@@ -176,7 +176,7 @@ export default function ProjectsSection() {
             href="https://github.com/darrenzhang905"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center text-gray-900 dark:text-white bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 px-6 py-3 rounded-md font-medium transition-all"
+            className="inline-flex items-center text-white bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-md font-medium transition-all"
           >
             <svg
               className="w-5 h-5 mr-2"

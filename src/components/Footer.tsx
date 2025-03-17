@@ -12,22 +12,19 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Quick Links */}
           <div>
-            <h3 className="text-sm font-semibold text-gray-800 dark:text-gray-200 uppercase tracking-wider">
+            <h3 className="text-sm font-semibold text-gray-200 uppercase tracking-wider">
               Quick Links
             </h3>
             <ul className="mt-4 space-y-2">
               <li>
-                <Link
-                  href="/#about"
-                  className="text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white"
-                >
+                <Link href="/#about" className="text-gray-400 hover:text-white">
                   About
                 </Link>
               </li>
               <li>
                 <Link
                   href="/#projects"
-                  className="text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white"
+                  className="text-gray-400 hover:text-white"
                 >
                   Projects
                 </Link>
@@ -35,7 +32,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/#skills"
-                  className="text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white"
+                  className="text-gray-400 hover:text-white"
                 >
                   Skills
                 </Link>
@@ -43,7 +40,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/#contact"
-                  className="text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white"
+                  className="text-gray-400 hover:text-white"
                 >
                   Contact
                 </Link>
@@ -53,7 +50,7 @@ export default function Footer() {
                   href="/Darren Zhang Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white"
+                  className="text-gray-400 hover:text-white"
                 >
                   Resume
                 </a>
@@ -63,11 +60,11 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-sm font-semibold text-gray-800 dark:text-gray-200 uppercase tracking-wider">
+            <h3 className="text-sm font-semibold text-gray-200 uppercase tracking-wider">
               Contact
             </h3>
             <ul className="mt-4 space-y-2">
-              <li className="text-gray-600 dark:text-gray-400">
+              <li className="text-gray-400">
                 <span className="flex items-center">
                   <svg
                     className="w-4 h-4 mr-2"
@@ -85,14 +82,14 @@ export default function Footer() {
                   </svg>
                   <a
                     href="mailto:darrenzhang905@gmail.com"
-                    className="hover:underline"
+                    className="hover:underline hover:text-white"
                   >
                     darrenzhang905@gmail.com
                   </a>
                 </span>
               </li>
 
-              <li className="text-gray-600 dark:text-gray-400">
+              <li className="text-gray-400">
                 <span className="flex items-center">
                   <svg
                     className="w-4 h-4 mr-2"
@@ -106,14 +103,14 @@ export default function Footer() {
                     href="https://linkedin.com/in/darrenzhang905"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:underline"
+                    className="hover:underline hover:text-white"
                   >
                     linkedin.com/in/darrenzhang905
                   </a>
                 </span>
               </li>
 
-              <li className="text-gray-600 dark:text-gray-400">
+              <li className="text-gray-400">
                 <span className="flex items-center">
                   <svg
                     className="w-4 h-4 mr-2"
@@ -142,8 +139,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
-          <p className="text-gray-500 dark:text-gray-400 text-sm text-center">
+        <div className="mt-12 pt-8 border-t border-gray-700">
+          <p className="text-gray-400 text-sm text-center">
             © {currentYear} Darren Zhang
           </p>
         </div>

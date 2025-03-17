@@ -19,7 +19,7 @@ export default function SkillsSection() {
         root: null,
         rootMargin: "0px",
         threshold: 0.1,
-      },
+      }
     );
 
     if (sectionRef.current) {

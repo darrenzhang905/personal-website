@@ -15,7 +15,7 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16"
+      className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16 bg-black"
     >
       <div className="max-w-7xl mx-auto w-full">
         <div className="flex flex-col md:flex-row-reverse lg:flex-row items-center justify-center gap-8 lg:gap-16">
@@ -29,8 +29,8 @@ export default function HeroSection() {
           >
             <div className="relative h-64 w-64 sm:h-72 sm:w-72 md:h-80 md:w-80 mx-auto">
               <div className="h-full w-full rounded-full bg-gradient-to-br from-blue-400 to-purple-500 p-1">
-                <div className="h-full w-full rounded-full bg-white dark:bg-gray-900 p-3">
-                  <div className="h-full w-full rounded-full overflow-hidden bg-gray-200 dark:bg-gray-800 flex items-center justify-center">
+                <div className="h-full w-full rounded-full bg-gray-900 p-3">
+                  <div className="h-full w-full rounded-full overflow-hidden bg-gray-800 flex items-center justify-center">
                     <Image
                       src="/images/profile.png"
                       alt="Darren Zhang picture"
@@ -53,28 +53,28 @@ export default function HeroSection() {
                 : "opacity-0 translate-y-10"
             }`}
           >
-            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">
               Darren Zhang
             </h1>
 
-            <h2 className="text-xl sm:text-2xl text-gray-600 dark:text-gray-400 font-semibold mb-6">
+            <h2 className="text-xl sm:text-2xl text-gray-400 font-semibold mb-6">
               Software Engineer
             </h2>
 
-            <p className="text-lg text-gray-600 text-white mb-8 max-w-lg mx-auto md:mx-0">
+            <p className="text-lg text-white mb-8 max-w-lg mx-auto md:mx-0">
               Crafting purposeful digital tools that solve everyday challenges
             </p>
 
             <div className="flex flex-row gap-4 justify-center md:justify-start">
               <Link
                 href="/#projects"
-                className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 py-3 px-6 rounded-md font-medium shadow-lg hover:shadow-xl transition-all"
+                className="bg-blue-600 text-white py-3 px-6 rounded-md font-medium shadow-lg hover:bg-blue-700 transition-all"
               >
                 View My Work
               </Link>
               <Link
                 href="/#contact"
-                className="border-2 border-gray-900 dark:border-white text-gray-900 dark:text-white py-3 px-6 rounded-md font-medium hover:bg-gray-100 dark:hover:bg-gray-800 transition-all"
+                className="border-2 border-white text-white py-3 px-6 rounded-md font-medium hover:bg-gray-800 transition-all"
               >
                 Let's Connect
               </Link>
@@ -85,7 +85,7 @@ export default function HeroSection() {
                 href="https://github.com/darrenzhang905"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                className="text-gray-400 hover:text-white"
               >
                 <svg
                   className="h-6 w-6"
@@ -104,7 +104,7 @@ export default function HeroSection() {
                 href="https://linkedin.com/in/darrenzhang905"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                className="text-gray-400 hover:text-white"
               >
                 <svg
                   className="h-6 w-6"

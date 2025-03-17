@@ -26,17 +26,19 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed w-full z-10 transition-all duration-300 ${
-        isScrolled
-          ? "bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-sm"
-          : "bg-transparent"
+        isScrolled ? "bg-black/90 backdrop-blur-md shadow-sm" : "bg-black/0"
       }`}
+      style={{
+        WebkitBackdropFilter: isScrolled ? "blur(8px)" : "none",
+        backdropFilter: isScrolled ? "blur(8px)" : "none",
+      }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link
               href="/"
-              className="text-gray-900 dark:text-white hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
+              className="text-white hover:text-blue-500 transition-colors"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -58,35 +60,23 @@ export default function Navbar() {
 
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link
-              href="/#about"
-              className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
-            >
+            <Link href="/#about" className="text-gray-300 hover:text-white">
               About
             </Link>
-            <Link
-              href="/#projects"
-              className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
-            >
+            <Link href="/#projects" className="text-gray-300 hover:text-white">
               Projects
             </Link>
-            <Link
-              href="/#skills"
-              className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
-            >
+            <Link href="/#skills" className="text-gray-300 hover:text-white">
               Skills
             </Link>
-            <Link
-              href="/#contact"
-              className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
-            >
+            <Link href="/#contact" className="text-gray-300 hover:text-white">
               Contact
             </Link>
             <a
               href="/Darren Zhang Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-4 py-2 rounded-md text-sm font-medium"
+              className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors"
             >
               Resume
             </a>
@@ -96,14 +86,17 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-300 hover:text-white focus:outline-none"
+              aria-expanded={isMenuOpen}
             >
+              <span className="sr-only">Open main menu</span>
               <svg
                 className={`${isMenuOpen ? "hidden" : "block"} h-6 w-6`}
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
+                aria-hidden="true"
               >
                 <path
                   strokeLinecap="round"
@@ -118,6 +111,7 @@ export default function Navbar() {
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
+                aria-hidden="true"
               >
                 <path
                   strokeLinecap="round"
@@ -133,34 +127,36 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div
-        className={`${isMenuOpen ? "block" : "hidden"} md:hidden bg-white dark:bg-gray-900 shadow-lg`}
+        className={`${
+          isMenuOpen ? "block" : "hidden"
+        } md:hidden bg-black shadow-lg`}
       >
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <Link
             href="/#about"
             onClick={() => setIsMenuOpen(false)}
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+            className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white"
           >
             About
           </Link>
           <Link
             href="/#projects"
             onClick={() => setIsMenuOpen(false)}
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+            className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white"
           >
             Projects
           </Link>
           <Link
             href="/#skills"
             onClick={() => setIsMenuOpen(false)}
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+            className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white"
           >
             Skills
           </Link>
           <Link
             href="/#contact"
             onClick={() => setIsMenuOpen(false)}
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+            className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white"
           >
             Contact
           </Link>
@@ -169,7 +165,7 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setIsMenuOpen(false)}
-            className="block px-3 py-2 rounded-md text-base font-medium bg-gray-900 dark:bg-white text-white dark:text-gray-900 mt-4"
+            className="block px-3 py-2 rounded-md text-base font-medium bg-blue-600 text-white mt-4 hover:bg-blue-700"
           >
             Resume
           </a>
