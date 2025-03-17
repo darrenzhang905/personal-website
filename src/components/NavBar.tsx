@@ -26,7 +26,7 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed w-full z-10 transition-all duration-300 ${
-        isScrolled ? "bg-black/90 backdrop-blur-md shadow-sm" : "bg-black/0"
+        isScrolled ? "bg-gray-900/95 backdrop-blur-md shadow-sm" : "bg-black/0"
       }`}
       style={{
         WebkitBackdropFilter: isScrolled ? "blur(8px)" : "none",
@@ -129,7 +129,7 @@ export default function Navbar() {
       <div
         className={`${
           isMenuOpen ? "block" : "hidden"
-        } md:hidden bg-black shadow-lg`}
+        } md:hidden bg-gray-900 shadow-lg`}
       >
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <Link
