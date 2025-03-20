@@ -4,7 +4,7 @@ A personal portfolio website built with Next.js, React, TypeScript, and Tailwind
 
 ## Live Demo
 
-[Check out the live website](https://darrenzhang.dev/) (Replace with your actual deployment URL)
+[Check out the live website](https://darrenzhang.dev/)
 
 ## Features
 
@@ -61,48 +61,10 @@ personal-website/
 └── tsconfig.json
 ```
 
-## Getting Started
-
-### Prerequisites
-
-- Node.js (v18 or later recommended)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository
-
-   ```bash
-   git clone https://github.com/darrenzhang905/personal-website.git
-   cd personal-website
-   ```
-
-2. Install dependencies
-
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-
-3. Run the development server
-
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
-
 ## Future Enhancements
 
 - Blog section
 - Animation improvements
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## Acknowledgments
 

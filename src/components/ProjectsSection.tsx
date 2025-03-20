@@ -11,7 +11,7 @@ const projects = [
     description: "My responsive portfolio website to showcase projects",
     tags: ["TypeScript", "React", "Next", "Tailwind CSS"],
     githubUrl: "https://github.com/darrenzhang905/personal-website",
-    liveUrl: "",
+    liveUrl: "https://darrenzhang.dev/",
   },
   {
     id: 2,
