@@ -1,4 +1,3 @@
-// src/components/ProjectsSection.tsx
 "use client";
 
 import { useState, useRef, useEffect } from "react";
