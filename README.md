@@ -38,15 +38,15 @@ A personal portfolio website built with Next.js, React, TypeScript, and Tailwind
 
 ```
 personal-website/
-├── public/                  # Static files
-│   ├── images/              # Images used in the website
-│   └── Darren Zhang Resume.pdf  # Resume file
+├── public/
+│   ├── images/
+│   └── Darren Zhang Resume.pdf
 ├── src/
-│   ├── app/                 # Next.js App Router
-│   │   ├── globals.css      # Global styles
-│   │   ├── layout.tsx       # Root layout
-│   │   └── page.tsx         # Home page
-│   └── components/          # React components
+│   ├── app/
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   └── components/
 │       ├── AboutSection.tsx
 │       ├── ContactSection.tsx
 │       ├── Footer.tsx
