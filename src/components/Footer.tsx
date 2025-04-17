@@ -1,4 +1,3 @@
-// src/components/Footer.tsx
 "use client";
 
 import Link from "next/link";
@@ -141,7 +140,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-gray-700">
           <p className="text-gray-400 text-sm text-center">
-            © {currentYear} Darren Zhang
+            © {currentYear} Darren Zhang. All rights reserved.
           </p>
         </div>
       </div>
