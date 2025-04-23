@@ -33,7 +33,7 @@ const projects = [
     id: 4,
     title: "Costco Spreadsheet",
     description: "Spreadsheet made to calculate Costco gold profit",
-    tags: ["TypeScript", "React", "Next", "Tailwind CSS", "Puppeteer"],
+    tags: ["TypeScript", "React", "Next", "Tailwind CSS"],
     githubUrl: "",
     liveUrl: "https://costco-spreadsheet.vercel.app/",
   },
