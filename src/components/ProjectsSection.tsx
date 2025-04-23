@@ -14,28 +14,27 @@ const projects = [
   },
   {
     id: 2,
-    title: "Dino Run",
-    description: "Personal adapation of Google Chrome Dinosaur Game",
-    tags: ["Python", "Pygame", "Pyaudio", "Aubio"],
-    githubUrl: "https://github.com/darrenzhang905/Dino-Run",
-    liveUrl: "",
-  },
-  {
-    id: 3,
-    title: "GPA Defense",
-    description:
-      "Simple tower defense game that me and my friends programmed during a 24 hour hackathon",
-    tags: ["Python", "Pygame"],
-    githubUrl: "https://github.com/darrenzhang905/GPA-Defense",
-    liveUrl: "",
-  },
-  {
-    id: 4,
     title: "Costco Spreadsheet",
     description: "Spreadsheet made to calculate Costco gold profit",
     tags: ["TypeScript", "React", "Next", "Tailwind CSS"],
     githubUrl: "",
     liveUrl: "https://costco-spreadsheet.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "Corporate Speak",
+    description: "Translate normal english to corporate jargon",
+    tags: ["TypeScript", "React", "Next", "LLM"],
+    githubUrl: "",
+    liveUrl: "https://corporate-speak.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "Dino Run",
+    description: "Personal adapation of Google Chrome Dinosaur Game",
+    tags: ["Python", "Pygame", "Pyaudio", "Aubio"],
+    githubUrl: "https://github.com/darrenzhang905/Dino-Run",
+    liveUrl: "",
   },
 ];
 
