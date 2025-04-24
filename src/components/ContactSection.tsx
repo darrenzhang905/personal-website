@@ -166,8 +166,7 @@ export default function ContactSection() {
 
               <div className="mt-8 pt-8 border-t border-gray-700">
                 <p className="text-gray-300">
-                  Open to opportunities and interesting projects. Let's make
-                  some cool stuff!
+                  Open to opportunities and interesting projects.
                 </p>
               </div>
             </div>
