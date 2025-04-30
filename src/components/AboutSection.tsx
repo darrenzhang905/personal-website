@@ -72,18 +72,15 @@ export default function AboutSection() {
                 <ul className="space-y-2 text-gray-300">
                   <li className="flex items-start">
                     <span className="text-lg mr-3">•</span>
-                    <span>Based in New York City</span>
+                    <span>Based in NYC</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-lg mr-3">•</span>
-                    <span>
-                      Graduated with a degree in math from Carnegie Mellon
-                      University
-                    </span>
+                    <span>Math + CS from Carnegie Mellon University</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-lg mr-3">•</span>
-                    <span>Worked at Amazon and Capital One</span>
+                    <span>Previously at Amazon and Capital One</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-lg mr-3">•</span>
