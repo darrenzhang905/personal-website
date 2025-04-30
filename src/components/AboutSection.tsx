@@ -88,7 +88,8 @@ export default function AboutSection() {
                   <li className="flex items-start">
                     <span className="text-lg mr-3">•</span>
                     <span>
-                      When I'm not coding, I enjoy traveling and reselling
+                      I enjoy traveling, building legos, and collecting smiskis
+                      in my free time
                     </span>
                   </li>
                 </ul>
