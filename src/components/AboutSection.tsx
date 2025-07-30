@@ -1,36 +1,9 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 
 export default function AboutSection() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
-      },
-      {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.1,
-      }
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
-  }, []);
+  const { ref: sectionRef, isVisible } = useIntersectionObserver();
 
   return (
     <section
@@ -61,7 +34,7 @@ export default function AboutSection() {
           >
             <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
               <p className="text-gray-300 mb-6">
-                Hey! I'm Darren, an engineer who loves building solutions to
+                Hey! I&apos;m Darren, an engineer who loves building solutions to
                 everyday problems.
               </p>
 

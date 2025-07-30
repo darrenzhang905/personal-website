@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
+import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 
 const projects = [
   {
@@ -39,34 +39,7 @@ const projects = [
 ];
 
 export default function ProjectsSection() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
-      },
-      {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.1,
-      }
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
-  }, []);
+  const { ref: sectionRef, isVisible } = useIntersectionObserver();
 
   return (
     <section
@@ -127,7 +100,8 @@ export default function ProjectsSection() {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue-400 hover:text-blue-300 font-medium flex items-center"
+                      className="text-blue-400 hover:text-blue-300 focus:text-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-800 rounded-md font-medium flex items-center"
+                      aria-label={`View live demo of ${project.title}`}
                     >
                       <svg
                         className="w-5 h-5 mr-1"
@@ -152,7 +126,8 @@ export default function ProjectsSection() {
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-400 hover:text-gray-200 font-medium flex items-center"
+                      className="text-gray-400 hover:text-gray-200 focus:text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-800 rounded-md font-medium flex items-center"
+                      aria-label={`View source code for ${project.title} on GitHub`}
                     >
                       <svg
                         className="w-5 h-5 mr-1"
@@ -184,7 +159,8 @@ export default function ProjectsSection() {
             href="https://github.com/darrenzhang905"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center text-white bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-md font-medium transition-all"
+            className="inline-flex items-center text-white bg-gray-800 hover:bg-gray-700 focus:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-black px-6 py-3 rounded-md font-medium transition-all"
+            aria-label="View more projects on GitHub"
           >
             <svg
               className="w-5 h-5 mr-2"

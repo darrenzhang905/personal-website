@@ -1,36 +1,9 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
+import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 
 export default function ContactSection() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
-      },
-      {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.1,
-      }
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
-  }, []);
+  const { ref: sectionRef, isVisible } = useIntersectionObserver();
 
   return (
     <section
@@ -86,7 +59,8 @@ export default function ContactSection() {
                   <h4 className="text-lg font-medium text-white">Email</h4>
                   <a
                     href="mailto:darrenzhang905@gmail.com"
-                    className="text-blue-400 hover:underline"
+                    className="text-blue-400 hover:underline focus:underline focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-800 rounded-md"
+                    aria-label="Send email to darrenzhang905@gmail.com"
                   >
                     darrenzhang905@gmail.com
                   </a>
@@ -131,7 +105,8 @@ export default function ContactSection() {
                     href="https://github.com/darrenzhang905"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 bg-gray-700 rounded-full text-white hover:bg-gray-600 transition-all"
+                    className="p-2 bg-gray-700 rounded-full text-white hover:bg-gray-600 focus:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-800 transition-all"
+                    aria-label="Visit Darren&apos;s GitHub profile"
                   >
                     <svg
                       className="w-6 h-6"
@@ -150,7 +125,8 @@ export default function ContactSection() {
                     href="https://linkedin.com/in/darrenzhang905"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 bg-gray-700 rounded-full text-white hover:bg-gray-600 transition-all"
+                    className="p-2 bg-gray-700 rounded-full text-white hover:bg-gray-600 focus:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-800 transition-all"
+                    aria-label="Visit Darren&apos;s LinkedIn profile"
                   >
                     <svg
                       className="w-6 h-6"

@@ -1,36 +1,9 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
+import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 
 export default function SkillsSection() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
-      },
-      {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.1,
-      }
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
-  }, []);
+  const { ref: sectionRef, isVisible } = useIntersectionObserver();
 
   return (
     <section
@@ -48,8 +21,8 @@ export default function SkillsSection() {
             Skills & Technologies
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            I've worked with a variety of technologies in the development world.
-            Here's an overview of my technical skills.
+            I&apos;ve worked with a variety of technologies in the development world.
+            Here&apos;s an overview of my technical skills.
           </p>
           <div className="h-1 w-20 bg-blue-500 mx-auto mt-4"></div>
         </div>

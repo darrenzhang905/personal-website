@@ -33,8 +33,8 @@ export default function HeroSection() {
                     <Image
                       src="/images/profile.png"
                       alt="Darren Zhang picture"
-                      layout="fill"
-                      objectFit="cover"
+                      fill
+                      style={{ objectFit: "cover" }}
                       className="rounded-full"
                       priority
                     />
@@ -63,15 +63,15 @@ export default function HeroSection() {
             <div className="flex flex-row gap-4 justify-center md:justify-start">
               <Link
                 href="/#projects"
-                className="bg-white text-black py-3 px-6 rounded-md font-medium shadow-lg hover:bg-gray-200 transition-all"
+                className="bg-white text-black py-3 px-6 rounded-md font-medium shadow-lg hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-black transition-all"
               >
                 View My Work
               </Link>
               <Link
                 href="/#contact"
-                className="bg-white text-black py-3 px-6 rounded-md font-medium shadow-lg hover:bg-gray-200 transition-all"
+                className="bg-white text-black py-3 px-6 rounded-md font-medium shadow-lg hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-black transition-all"
               >
-                Let's Connect
+                Let&apos;s Connect
               </Link>
             </div>
 
@@ -80,7 +80,8 @@ export default function HeroSection() {
                 href="https://github.com/darrenzhang905"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white"
+                className="text-gray-400 hover:text-white focus:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-black rounded-md p-1"
+                aria-label="Visit Darren&apos;s GitHub profile"
               >
                 <svg
                   className="h-6 w-6"
@@ -99,7 +100,8 @@ export default function HeroSection() {
                 href="https://linkedin.com/in/darrenzhang905"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white"
+                className="text-gray-400 hover:text-white focus:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-black rounded-md p-1"
+                aria-label="Visit Darren&apos;s LinkedIn profile"
               >
                 <svg
                   className="h-6 w-6"
