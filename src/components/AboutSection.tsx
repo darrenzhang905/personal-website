@@ -49,11 +49,19 @@ export default function AboutSection() {
                   </li>
                   <li className="flex items-start">
                     <span className="text-lg mr-3">•</span>
-                    <span>Math + CS from Carnegie Mellon University</span>
+                    <span>B.S in Mathematical Sciences from Carnegie Mellon University</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-lg mr-3">•</span>
-                    <span>Previously at Amazon and Capital One</span>
+                    <span>Currently pursuing M.S in Computer Science at Georgia Tech</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-lg mr-3">•</span>
+                    <span>Senior Software Engineer at Geico</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-lg mr-3">•</span>
+                    <span>Previously at Capital One and Amazon</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-lg mr-3">•</span>

@@ -46,7 +46,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="/Darren Zhang Resume.pdf"
+                  href="/Darren_Zhang_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white"

@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://darrenzhang.dev"),
   title: "Darren Zhang - Software Engineer",
-  description: "Software Engineer based in NYC with experience at Amazon and Capital One. Math + CS from Carnegie Mellon University. Passionate about building solutions to everyday problems.",
-  keywords: ["software engineer", "developer", "NYC", "Amazon", "Capital One", "Carnegie Mellon", "full-stack", "React", "TypeScript", "Python", "AWS"],
+  description: "Senior Software Engineer at Geico, based in NYC. B.S in Mathematical Sciences from Carnegie Mellon University, pursuing M.S in Computer Science at Georgia Tech. Previously at Capital One and Amazon.",
+  keywords: ["senior software engineer", "developer", "NYC", "Geico", "Capital One", "Amazon", "Carnegie Mellon", "Georgia Tech", "full-stack", "React", "TypeScript", "Python", "Go", "AWS", "Azure"],
   authors: [{ name: "Darren Zhang" }],
   creator: "Darren Zhang",
   publisher: "Darren Zhang",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     url: "https://darrenzhang.dev",
     siteName: "Darren Zhang - Software Engineer",
     title: "Darren Zhang - Software Engineer",
-    description: "Software Engineer based in NYC with experience at Amazon and Capital One. Math + CS from Carnegie Mellon University.",
+    description: "Senior Software Engineer at Geico, based in NYC. B.S in Mathematical Sciences from Carnegie Mellon University, pursuing M.S in Computer Science at Georgia Tech.",
     images: [
       {
         url: "/images/profile.png",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Darren Zhang - Software Engineer",
-    description: "Software Engineer based in NYC with experience at Amazon and Capital One. Math + CS from Carnegie Mellon University.",
+    description: "Senior Software Engineer at Geico, based in NYC. B.S in Mathematical Sciences from Carnegie Mellon University, pursuing M.S in Computer Science at Georgia Tech.",
     images: ["/images/profile.png"],
   },
   alternates: {

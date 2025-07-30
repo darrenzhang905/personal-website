@@ -57,6 +57,9 @@ export default function SkillsSection() {
                   Python
                 </span>
                 <span className="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">
+                  Go
+                </span>
+                <span className="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">
                   Java
                 </span>
                 <span className="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">
@@ -96,22 +99,25 @@ export default function SkillsSection() {
                   React
                 </span>
                 <span className="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">
+                  Next.js
+                </span>
+                <span className="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">
+                  Tailwind CSS
+                </span>
+                <span className="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">
                   JUnit
                 </span>
                 <span className="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">
                   Cypress
                 </span>
                 <span className="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">
-                  Spring
+                  Spring Boot
                 </span>
                 <span className="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">
                   Cucumber
                 </span>
                 <span className="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">
                   Maven
-                </span>
-                <span className="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">
-                  Mockito
                 </span>
               </div>
             </div>
@@ -132,16 +138,28 @@ export default function SkillsSection() {
                   AWS
                 </span>
                 <span className="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">
-                  Git
+                  Azure
+                </span>
+                <span className="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">
+                  ADO
                 </span>
                 <span className="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">
                   Splunk
                 </span>
                 <span className="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">
-                  Snowflake
+                  Prometheus
+                </span>
+                <span className="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">
+                  Grafana
                 </span>
                 <span className="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">
                   New Relic
+                </span>
+                <span className="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">
+                  JFrog
+                </span>
+                <span className="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">
+                  Snowflake
                 </span>
                 <span className="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">
                   Jenkins
