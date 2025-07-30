@@ -70,8 +70,8 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Darren Zhang",
-    "jobTitle": "Software Engineer",
-    "description": "Software Engineer based in NYC with experience at Amazon and Capital One. Math + CS from Carnegie Mellon University.",
+    "jobTitle": "Senior Software Engineer",
+    "description": "Senior Software Engineer at Geico, based in NYC. B.S in Mathematical Sciences from Carnegie Mellon University, pursuing M.S in Computer Science at Georgia Tech.",
     "url": "https://darrenzhang.dev",
     "image": "https://darrenzhang.dev/images/profile.png",
     "email": "darrenzhang905@gmail.com",
@@ -81,18 +81,26 @@ export default function RootLayout({
       "addressRegion": "NY",
       "addressCountry": "US"
     },
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "Carnegie Mellon University"
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Carnegie Mellon University"
+      }
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Geico"
     },
-    "worksFor": [
+    "hasCredential": [
       {
-        "@type": "Organization",
-        "name": "Amazon"
-      },
-      {
-        "@type": "Organization",
-        "name": "Capital One"
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "degree",
+        "educationalLevel": "Master's degree",
+        "about": "Computer Science",
+        "recognizedBy": {
+          "@type": "CollegeOrUniversity",
+          "name": "Georgia Institute of Technology"
+        }
       }
     ],
     "sameAs": [
