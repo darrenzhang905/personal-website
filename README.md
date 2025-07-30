@@ -40,24 +40,35 @@ A personal portfolio website built with Next.js, React, TypeScript, and Tailwind
 personal-website/
 ├── public/
 │   ├── images/
+│   │   └── profile.png
+│   ├── dragon.ico
 │   └── Darren Zhang Resume.pdf
 ├── src/
 │   ├── app/
 │   │   ├── globals.css
 │   │   ├── layout.tsx
 │   │   └── page.tsx
-│   └── components/
-│       ├── AboutSection.tsx
-│       ├── ContactSection.tsx
-│       ├── Footer.tsx
-│       ├── HeroSection.tsx
-│       ├── NavBar.tsx
-│       ├── ProjectsSection.tsx
-│       └── SkillsSection.tsx
+│   ├── components/
+│   │   ├── AboutSection.tsx
+│   │   ├── ContactSection.tsx
+│   │   ├── Footer.tsx
+│   │   ├── HeroSection.tsx
+│   │   ├── NavBar.tsx
+│   │   ├── ProjectsSection.tsx
+│   │   └── SkillsSection.tsx
+│   ├── lib/
+│   │   └── utils.ts
+│   └── types/
+│       └── index.ts
+├── .env.local.example
 ├── .gitignore
-├── next.config.js
+├── .prettierrc
+├── eslint.config.mjs
+├── next.config.ts
 ├── package.json
+├── postcss.config.mjs
 ├── README.md
+├── tailwind.config.ts
 └── tsconfig.json
 ```
 
