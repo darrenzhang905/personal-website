@@ -21,7 +21,7 @@ const projects = [
     liveUrl: "https://costco-spreadsheet.vercel.app/",
   },
   {
-    id: 4,
+    id: 3,
     title: "Dino Run",
     description: "Personal adapation of Google Chrome Dinosaur Game",
     tags: ["Python", "Pygame", "Pyaudio", "Aubio"],
