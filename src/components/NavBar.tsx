@@ -7,6 +7,13 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    // Remove focus after click to prevent persistent focus state
+    setTimeout(() => {
+      (e.target as HTMLAnchorElement).blur();
+    }, 100);
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
@@ -60,16 +67,32 @@ export default function Navbar() {
 
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/#about" className="text-gray-300 hover:text-white focus:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded-md px-2 py-1">
+            <Link 
+              href="/#about" 
+              onClick={handleLinkClick}
+              className="text-gray-300 hover:text-white focus:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded-md px-2 py-1"
+            >
               About
             </Link>
-            <Link href="/#projects" className="text-gray-300 hover:text-white focus:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded-md px-2 py-1">
+            <Link 
+              href="/#projects" 
+              onClick={handleLinkClick}
+              className="text-gray-300 hover:text-white focus:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded-md px-2 py-1"
+            >
               Projects
             </Link>
-            <Link href="/#skills" className="text-gray-300 hover:text-white focus:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded-md px-2 py-1">
+            <Link 
+              href="/#skills" 
+              onClick={handleLinkClick}
+              className="text-gray-300 hover:text-white focus:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded-md px-2 py-1"
+            >
               Skills
             </Link>
-            <Link href="/#contact" className="text-gray-300 hover:text-white focus:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded-md px-2 py-1">
+            <Link 
+              href="/#contact" 
+              onClick={handleLinkClick}
+              className="text-gray-300 hover:text-white focus:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded-md px-2 py-1"
+            >
               Contact
             </Link>
             <a
@@ -134,28 +157,28 @@ export default function Navbar() {
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <Link
             href="/#about"
-            onClick={() => setIsMenuOpen(false)}
+            onClick={(e) => { handleLinkClick(e); setIsMenuOpen(false); }}
             className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white focus:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900"
           >
             About
           </Link>
           <Link
             href="/#projects"
-            onClick={() => setIsMenuOpen(false)}
+            onClick={(e) => { handleLinkClick(e); setIsMenuOpen(false); }}
             className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white focus:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900"
           >
             Projects
           </Link>
           <Link
             href="/#skills"
-            onClick={() => setIsMenuOpen(false)}
+            onClick={(e) => { handleLinkClick(e); setIsMenuOpen(false); }}
             className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white focus:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900"
           >
             Skills
           </Link>
           <Link
             href="/#contact"
-            onClick={() => setIsMenuOpen(false)}
+            onClick={(e) => { handleLinkClick(e); setIsMenuOpen(false); }}
             className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white focus:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900"
           >
             Contact
