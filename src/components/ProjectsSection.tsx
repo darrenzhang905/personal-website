@@ -21,14 +21,6 @@ const projects = [
     liveUrl: "https://costco-spreadsheet.vercel.app/",
   },
   {
-    id: 3,
-    title: "Corporate Speak",
-    description: "Translate normal english to corporate jargon",
-    tags: ["TypeScript", "React", "Next", "LLM"],
-    githubUrl: "",
-    liveUrl: "https://corporate-speak.vercel.app/",
-  },
-  {
     id: 4,
     title: "Dino Run",
     description: "Personal adapation of Google Chrome Dinosaur Game",
